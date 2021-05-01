@@ -6,41 +6,60 @@
 	<!-- This is a Source Insight desktop layout file. -->
 	<!-- www.sourceinsight.com -->
 	<MainWindow
-		IsMaximized="1"
+		IsMaximized="0"
 		IsFullScreen="0"
 		>
-		<WindowRect Left="-11" Top="-11" Right="3851" Bottom="2111" />
-		<NormalWindowRect Left="1311" Top="344" Right="3251" Bottom="2141" />
+		<WindowRect Left="-7" Top="30" Right="967" Bottom="1087" />
+		<NormalWindowRect Left="-7" Top="30" Right="967" Bottom="1087" />
 	</MainWindow>
 	<Options>
 		<WindowTabOptions IsVisible="1" ShowPathInfo="1" SortOrder="Usage" />
 	</Options>
 	<PanelArea>
-		<WorkArea Left="0" Top="102" Right="3840" Bottom="2100" />
+		<WorkArea Left="1" Top="130" Right="959" Bottom="1053" />
 		<TabTray IsVisible="0" />
 		<DockZones>
 			<Left>
-				<Rect Left="0" Top="107" Right="5" Bottom="1696" />
+				<Rect Left="1" Top="134" Right="5" Bottom="865" />
 				<Contents/>
 			</Left>
 			<Top>
-				<Rect Left="0" Top="102" Right="3840" Bottom="107" />
+				<Rect Left="1" Top="130" Right="959" Bottom="134" />
 				<Contents/>
 			</Top>
 			<Right>
-				<Rect Left="2871" Top="107" Right="3840" Bottom="1696" />
+				<Rect Left="955" Top="134" Right="959" Bottom="865" />
+				<Contents/>
+			</Right>
+			<Bottom>
+				<Rect Left="1" Top="865" Right="959" Bottom="1053" />
 				<Contents>
 					<PanelHost
-						Title="Symbol Categories"
-						id="ProjectPanelHost"
+						Title="Context"
+						id="ContextPanelHost"
 						IsHidden="1"
 						PctTrans="0"
 						IsMinimized="0"
-						PanelCount="4"
-						idPalActive="ProjectSymbolCategoryPanel"
+						PanelCount="1"
+						idPalActive="ContextPanel"
 						>
-						<WindowRect Left="2876" Top="107" Right="3840" Bottom="1696" />
-						<PredockRect Left="150" Top="150" Right="975" Bottom="900" />
+						<WindowRect Left="1" Top="869" Right="959" Bottom="7355" />
+						<PredockRect Left="785" Top="390" Right="1135" Bottom="690" />
+						<Panels>
+							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
+						</Panels>
+					</PanelHost>
+					<PanelHost
+						Title="Project Files"
+						id="ProjectPanelHost"
+						IsHidden="0"
+						PctTrans="0"
+						IsMinimized="0"
+						PanelCount="4"
+						idPalActive="ProjectFilePanel"
+						>
+						<WindowRect Left="1" Top="869" Right="959" Bottom="1053" />
+						<PredockRect Left="100" Top="100" Right="650" Bottom="600" />
 						<Panels>
 							<Panel
 								id="ProjectFilePanel"
@@ -48,10 +67,11 @@
 								ViewToolbar="1"
 								>
 								<Columns>
-									<Column0 ID="0" Width="180" />
-									<Column1 ID="1" Width="144" />
-									<Column2 ID="2" Width="144" />
-									<Column3 ID="3" Width="144" />
+									<Column0 ID="0" Width="120" />
+									<Column1 ID="1" Width="96" />
+									<Column2 ID="2" Width="96" />
+									<Column3 ID="3" Width="96" />
+									<Column4 ID="4" Width="96" />
 								</Columns>
 							</Panel>
 							<Panel
@@ -60,52 +80,22 @@
 								ViewToolbar="1"
 								>
 								<Columns>
-									<Column0 ID="6" Width="288" />
-									<Column1 ID="0" Width="144" />
-									<Column2 ID="4" Width="144" />
+									<Column0 ID="6" Width="192" />
+									<Column1 ID="0" Width="96" />
+									<Column2 ID="4" Width="96" />
 								</Columns>
 							</Panel>
-							<Panel
-								id="ProjectFolderPanel"
-								IsHidden="0"
-								ViewToolbar="1"
-								>
-								<Columns>
-									<Column0 ID="0" Width="180" />
-									<Column1 ID="1" Width="108" />
-									<Column2 ID="2" Width="108" />
-								</Columns>
-							</Panel>
+							<Panel id="ProjectFolderPanel" IsHidden="0" ViewToolbar="1" />
 							<Panel
 								id="ProjectSymbolCategoryPanel"
 								IsHidden="0"
 								ViewToolbar="1"
 								>
 								<Columns>
-									<Column0 ID="7" Width="288" />
-									<Column1 ID="0" Width="144" />
+									<Column0 ID="7" Width="192" />
+									<Column1 ID="0" Width="96" />
 								</Columns>
 							</Panel>
-						</Panels>
-					</PanelHost>
-				</Contents>
-			</Right>
-			<Bottom>
-				<Rect Left="0" Top="1696" Right="3840" Bottom="2100" />
-				<Contents>
-					<PanelHost
-						Title="Context"
-						id="ContextPanelHost"
-						IsHidden="0"
-						PctTrans="0"
-						IsMinimized="0"
-						PanelCount="1"
-						idPalActive="ContextPanel"
-						>
-						<WindowRect Left="0" Top="1701" Right="3840" Bottom="2100" />
-						<PredockRect Left="1658" Top="855" Right="2183" Bottom="1305" />
-						<Panels>
-							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
 						</Panels>
 					</PanelHost>
 				</Contents>
@@ -121,8 +111,8 @@
 				PanelCount="1"
 				idPalActive="BookmarkPanel"
 				>
-				<WindowRect Left="150" Top="315" Right="750" Bottom="600" />
-				<PredockRect Left="150" Top="315" Right="750" Bottom="600" />
+				<WindowRect Left="100" Top="210" Right="500" Bottom="400" />
+				<PredockRect Left="100" Top="210" Right="500" Bottom="400" />
 				<Panels>
 					<Panel id="BookmarkPanel" IsHidden="0" ViewToolbar="1" />
 				</Panels>

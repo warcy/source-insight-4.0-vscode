@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SourceInsightConfiguration
-	AppVer="4.00.0093"
+	AppVer="4.00.0084"
 	AppVerMinReader="4.00.0032"
 	>
 	<!-- This is a Source Insight configuration file. -->
 	<!-- www.sourceinsight.com -->
 
 	<GeneralPreferences
-		OpenDlgProjOnly="1"
+		OpenDlgProjOnly="0"
 		UseGlobalConfig="1"
 		SleepInBackground="1"
 		UseSourceTips="1"
@@ -22,14 +22,14 @@
 		/>
 	<DisplayPreferences>
 		<GeneralDisplayOptions
-			StatusBar="0"
+			StatusBar="1"
 			PageNumInStatusbar="0"
-			MainToolBar="0"
-			HorizScrollBar="0"
-			VertScrollBar="0"
-			EnhancedVertScrollBar="0"
-			ScalePercent="100"
-			PopupToolbar="0"
+			MainToolBar="1"
+			HorizScrollBar="1"
+			VertScrollBar="1"
+			EnhancedVertScrollBar="1"
+			ScalePercent="130"
+			PopupToolbar="1"
 			SmoothScrolling="1"
 			AccelSmoothScrolling="1"
 			ShowChangemarks="1"
@@ -42,20 +42,20 @@
 			MonoSpaces="1"
 			MonospaceTabs="1"
 			MaximizeNewWindows="1"
-			MonoFontView="1"
+			MonoFontView="0"
 			Gradients="1"
 			VisualThemes="1"
-			CompressLineHeights="0"
-			Animations="1"
+			CompressLineHeights="1"
+			Animations="0"
 			TrimFilePaths="1"
 			CascadeNewWindows="1"
 			ShowProjectInWorkspace="1"
 			ShowOutlineHover="1"
-			AlwaysShowOutlineMarks="0"
+			AlwaysShowOutlineMarks="1"
 			OutlineIndent="0"
-			OutlineAllBlocks="0"
+			OutlineAllBlocks="1"
 			ShowNestingLines="1"
-			ShowCurLineMarker="0"
+			ShowCurLineMarker="1"
 			PanelToolbarBottom="1"
 			ShowSearchBar="0"
 			ShowSearchProjBar="0"
@@ -64,19 +64,19 @@
 			/>
 		<ScrollBarOptions
 			AllowScaling="0"
-			ShowSymbols="0"
-			ShowLines="0"
+			ShowSymbols="1"
+			ShowLines="1"
 			ShowChangeMarks="1"
 			ShowSelection="1"
 			ShowInactiveLines="1"
 			ShowBookmarks="1"
 			EnableHoverMsgs="1"
-			MirrorView="1"
-			percentWidth="80"
-			UseBackColor="1"
-			MarksColor="#1e1e1e"
-			TextColor="#d4d4d4"
-			BackColor="#1e1e1e"
+			MirrorView="0"
+			percentWidth="100"
+			UseBackColor="0"
+			MarksColor="#c0c0c0"
+			TextColor="#c0c0c0"
+			BackColor="#e6e6e6"
 			ThumbColor="#808080"
 			/>
 		<OverviewOptions
@@ -95,14 +95,14 @@
 			UseTextColor="0"
 			UseBackColor="0"
 			BackColor="#ffffff"
-			MarkColor="#0080c0"
+			MarkColor="#35bdff"
 			TextColor="#000000"
 			/>
 		<DefaultPanelFontAndColor
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</DefaultPanelFontAndColor>
 	</DisplayPreferences>
 	<EditingPreferences
@@ -116,8 +116,8 @@
 		TabReplacesSelection="1"
 		IndentPreprocStatments="0"
 		UseSmartPaste="1"
-		SelectLinesAfterPaste="0"
-		SelectAfterPaste="Start"
+		SelectLinesAfterPaste="1"
+		SelectAfterPaste="End"
 		UseAutoComplete="1"
 		AutoCompleteDetailMode="1"
 		AutoCompleteInsertParams="1"
@@ -131,7 +131,7 @@
 		/>
 	<SyntaxFormatting
 		UseSyntaxFormatting="1"
-		UseOnlyColor="1"
+		UseOnlyColor="0"
 		UseNoColor="0"
 		>
 		<ApplyStylesFor
@@ -174,7 +174,7 @@
 		<Item Name="PrintedWindowBackground" Color="#02ffff" />
 		<Item Name="ChangeMarks" Color="#ffff00" />
 		<Item Name="SavedChangeMarks" Color="#bdddba" />
-		<Item Name="CurrentLineIndicator" Color="#569cd6" />
+		<Item Name="CurrentLineIndicator" Color="#313131" />
 		<Item Name="EndofFile" Color="#1e1e1e" />
 		<Item Name="ApplicationBackground" Color="#1e1e1e" />
 		<Item Name="FrameText" Color="#ffffff" />
@@ -350,7 +350,6 @@
 			<item Command="---Menu Separator---" />
 			<item Command="Load Configuration..." />
 			<item Command="Save Configuration..." />
-			<item Command="Visual Theme" />
 		</Menu>
 		<Menu
 			Name="Tools"
@@ -421,58 +420,35 @@
 			<item Command="Source Insight Website" />
 			<item Command="About Source Insight..." />
 		</Menu>
-		<Menu
-			Name="Work"
-			>
-			<item Command="Explore Project Folder" Allocated="1" />
-			<item Command="Astyle_Mode" Allocated="1" />
-			<item Command="HeaderFileCreate" Allocated="1" />
-			<item Command="FileHeaderCreate" Allocated="1" />
-			<item Command="---Menu Separator---" />
-			<item Command="Check In" Allocated="1" />
-			<item Command="Check Out" Allocated="1" />
-			<item Command="Search In Folder" Allocated="1" />
-			<item Command="start ssh ubuntu" Allocated="1" />
-			<item Command="cp wifi to xc" Allocated="1" />
-			<item Command="ZENGHI BUILD WIFI" Allocated="1" />
-			<item Command="ZENGHI cp wifi to op" Allocated="1" />
-			<item Command="ZENGHI ssh ubuntu" Allocated="1" />
-			<item Command="ZENGHI ssh ub cmder" Allocated="1" />
-			<item Command="---Menu Separator---" />
-		</Menu>
 	</Menus>
 	<Keymaps>
 		<Main>
-			<item Command="Get_C_FileName" Keycode="(A)F3" Allocated="1" />
-			<item Command="Go Back" Keycode="(A)F1" />
-			<item Command="Search Files..." Keycode="(A)F" />
-			<item Command="Search..." Keycode="(C)F" />
-			<item Command="Function Up" Keycode="PgUp" />
-			<item Command="Function Down" Keycode="PgDn" />
+			<item Command="Project Symbols Dialog..." Keycode="F8" />
+			<item Command="Pick Window..." Keycode="(A)W" />
 			<item Command="Highlight Word" Keycode="(S)F8" />
-			<item Command="Go To Previous Change" Keycode="(A)-" />
-			<item Command="Go To Next Change" Keycode="(A)+" />
-			<item Command="Vertical Scroll Bar " Keycode="(A)F7" />
-			<item Command="Relation Window" Keycode="(A)F10" />
-			<item Command="Project Window" Keycode="(A)F9" />
 			<item Command="Load Layout A" Keycode="(CS)F1" />
 			<item Command="Load Layout B" Keycode="(CS)F2" />
 			<item Command="Load Layout C" Keycode="(CS)F3" />
 			<item Command="Load Layout D" Keycode="(CS)F4" />
+			<item Command="Help..." Keycode="F1" />
+			<item Command="Select Next Window" Keycode="F2" />
 			<item Command="Search Backward" Keycode="F3" />
 			<item Command="Search Forward" Keycode="F4" />
 			<item Command="Go To Line..." Keycode="F5" />
 			<item Command="Tile Two Windows" Keycode="F6" />
 			<item Command="Activate Project Symbol List" Keycode="F7" />
-			<item Command="Highlight Word" Keycode="F8" />
 			<item Command="Indent Left" Keycode="F9" />
 			<item Command="Indent Right" Keycode="F10" />
 			<item Command="Full Screen" Keycode="F11" />
 			<item Command="Incremental Search..." Keycode="F12" />
 			<item Command="Mono Font View" Keycode="(A)F12" />
+			<item Command="SDK Help..." Keycode="(A)F1" />
 			<item Command="Exit" Keycode="(A)F4" />
 			<item Command="New Window" Keycode="(A)F5" />
+			<item Command="Close Window" Keycode="(A)F6" />
+			<item Command="Sort Symbol Window" Keycode="(A)F7" />
 			<item Command="Symbol Window" Keycode="(A)F8" />
+			<item Command="Zoom Window" Keycode="(A)F10" />
 			<item Command="Select Previous Window" Keycode="(S)F1" />
 			<item Command="Select Next Window" Keycode="(S)F2" />
 			<item Command="Search Backward for Selection" Keycode="(S)F3" />
@@ -498,11 +474,14 @@
 			<item Command="Paste" Keycode="(S)Ins" />
 			<item Command="Cut" Keycode="(S)Del" />
 			<item Command="Select All" Keycode="(C)A" />
+			<item Command="Activate File Menu" Keycode="(A)F" />
+			<item Command="Activate Edit Menu" Keycode="(A)E" />
 			<item Command="Activate Search Menu" Keycode="(A)S" />
 			<item Command="Activate Project Menu" Keycode="(A)P" />
 			<item Command="Activate Help Menu" Keycode="(A)H" />
 			<item Command="Activate Options Menu" Keycode="(A)O" />
 			<item Command="Activate View Menu" Keycode="(A)V" />
+			<item Command="Activate System Doc Menu" Keycode="(A)-" />
 			<item Command="Activate System Menu" Keycode="(A)Space" />
 			<item Command="Activate Work Menu" Keycode="(A)K" />
 			<item Command="Activate Tools Menu" Keycode="(A)T" />
@@ -520,7 +499,9 @@
 			<item Command="Select Page Up" Keycode="(SN)PgUp" />
 			<item Command="Select To Top Of File" Keycode="(CS)Home" />
 			<item Command="Select To End Of File" Keycode="(CS)End" />
+			<item Command="Page Up" Keycode="PgUp" />
 			<item Command="Page Up" Keycode="(N)PgUp" />
+			<item Command="Page Down" Keycode="PgDn" />
 			<item Command="Page Down" Keycode="(N)PgDn" />
 			<item Command="Scroll Half Page Down" Keycode="(C)PgDn" />
 			<item Command="Scroll Half Page Down" Keycode="(CN)PgDn" />
@@ -582,6 +563,7 @@
 			<item Command="Activate Project Symbol List" Keycode="(A)G" />
 			<item Command="Activate Symbol Window" Keycode="(A)L" />
 			<item Command="Renumber..." Keycode="(C)R" />
+			<item Command="Search..." Keycode="(C)F" />
 			<item Command="Search Files..." Keycode="(CS)F" />
 			<item Command="Lookup References..." Keycode="(C)/" />
 			<item Command="Search Web..." Keycode="(CA)W" />
@@ -627,6 +609,7 @@
 			<item Command="Cut Word" Keycode="(C)," />
 			<item Command="Insert Line Before Next" Keycode="(C)Space" />
 			<item Command="Join Lines" Keycode="(C)J" />
+			<item Command="Insert New Line" Keycode="(C)Enter" />
 			<item Command="Cut To Clip..." Keycode="(CS)X" />
 			<item Command="Copy To Clip..." Keycode="(C)Del" />
 			<item Command="Paste From Clip..." Keycode="(C)Ins" />
@@ -637,53 +620,16 @@
 			<item Command="Copy" Keycode="mouse(LR)" />
 			<item Command="Select To" Keycode="(S)mouse(L)" />
 			<item Command="Make Column Selection" Keycode="(A)mouse(L)" />
+			<item Command="Symbol Info..." Keycode="(C)mouse(R+SEL)" />
 			<item Command="Enter" Keycode="Enter" />
 			<item Command="Enter" Keycode="Enter" />
 			<item Command="Enter" Keycode="(N)Enter" />
 			<item Command="Tab" Keycode="Tab" />
 			<item Command="Back Tab" Keycode="(S)Tab" />
 			<item Command="Simple Tab" Keycode="(CA)Tab" />
-			<item Command="AddMacroComment" Keycode="(A)4" Allocated="1" />
-			<item Command="BlockComment" Keycode="(A)Q" Allocated="1" />
-			<item Command="ExpandBraceLarge" Keycode="(A)[" Allocated="1" />
-			<item Command="FunctionHeaderCreate" Keycode="(A)C" Allocated="1" />
-			<item Command="GetFullDirName" Keycode="(A)1" Allocated="1" />
-			<item Command="GetFullFileName" Keycode="(A)2" Allocated="1" />
-			<item Command="InsIfdef" Keycode="(A)W" Allocated="1" />
-			<item Command="InsIfndef" Keycode="(A)E" Allocated="1" />
-			<item Command="MultiLineComment" Keycode="(A)3" Allocated="1" />
-			<item Command="Insert_debug" Keycode="(A)`" Allocated="1" />
-			<item Command="Auto_printf_var" Keycode="(C)B" Allocated="1" />
-			<item Command="Vertical Scroll Bar " Keycode="(A)F6" />
-			<item Command="AutoConvertUpperOrLow" Keycode="(A)" Allocated="1" />
-			<item Command="Go To Next Link" Keycode="F2" />
-			<item Command="Go To Previous Link" Keycode="F1" />
-			<item Command="MakeComment" Keycode="(C)F11" Allocated="1" />
-			<item Command="Go Forward" Keycode="(A)F2" />
-			<item Command="AutoExpand" Keycode="(C)Enter" Allocated="1" />
-			<item Command="Symbol Info..." Keycode="(C)mouse(R+SEL)" />
 		</Main>
 	</Keymaps>
 	<CustomCommands>
-		<Command
-			Name="Astyle_Mode"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\bin\AStyle.exe&quot; --style=ansi -s4 -S -N -L -m0 -M40 --convert-tabs  %f"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="1"
-			PauseWhenDone="0"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
 		<Command
 			Name="Build Project"
 			RunText=""
@@ -705,7 +651,7 @@
 			/>
 		<Command
 			Name="Check In"
-			RunText="cmd /c ssh root@192.168.137.123"
+			RunText="ss Checkin %f"
 			WorkingDir=""
 			NormalWindow="1"
 			CaptureOutput="0"
@@ -719,12 +665,12 @@
 			ParseOutput="0"
 			LineThenFile="0"
 			RegexType="Source Insight"
-			Preset="0"
+			Preset="1"
 			ParsePattern=""
 			/>
 		<Command
 			Name="Check Out"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\plink.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.123"
+			RunText="ss Checkout %f"
 			WorkingDir=""
 			NormalWindow="1"
 			CaptureOutput="0"
@@ -738,12 +684,12 @@
 			ParseOutput="0"
 			LineThenFile="0"
 			RegexType="Source Insight"
-			Preset="0"
+			Preset="1"
 			ParsePattern=""
 			/>
 		<Command
 			Name="Clean Build"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\plink.exe&quot; -ssh -P 24040-pw huangdezeng root@192.168.199.1 &quot;tcpdump -i wlan0 -s 0 -w - not port 24040&quot; | &quot;C:\Program Files (x86)\Wireshark\Wireshark.exe&quot; -k -i -"
+			RunText=""
 			WorkingDir=""
 			NormalWindow="1"
 			CaptureOutput="1"
@@ -757,7 +703,7 @@
 			ParseOutput="1"
 			LineThenFile="0"
 			RegexType="Source Insight"
-			Preset="0"
+			Preset="1"
 			ParsePattern="^\([a-zA-Z].*\)(\([0-9][0-9]*\)).*"
 			/>
 		<Command
@@ -781,7 +727,7 @@
 			/>
 		<Command
 			Name="Compile File"
-			RunText="cmd %f"
+			RunText="cl %f"
 			WorkingDir=""
 			NormalWindow="1"
 			CaptureOutput="1"
@@ -795,55 +741,17 @@
 			ParseOutput="1"
 			LineThenFile="0"
 			RegexType="Source Insight"
-			Preset="0"
+			Preset="1"
 			ParsePattern="^\([a-zA-Z].*\)(\([0-9][0-9]*\)).*"
 			/>
 		<Command
-			Name="cp wifi to xc"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\pscp.exe&quot; -scp -l root -P 24040 -pw xcosadmin Z:\xcos_op\openwrt_15.05\bin\ar71xx\packages\base\apfree_wifidog_2.03.1061-1_ar71xx.ipk 192.168.199.1:/tmp"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
 			Name="Explore Project Folder"
-			RunText="ShellExecute explore %d"
+			RunText="ShellExecute explore %j"
 			WorkingDir=""
 			NormalWindow="1"
 			CaptureOutput="0"
 			PasteOutput="0"
 			SaveFilesFirst="0"
-			PauseWhenDone="0"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="explorer now"
-			RunText="cmd /c start %d"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="1"
 			PauseWhenDone="0"
 			BeepWhenDone="0"
 			WaitUntilDone="0"
@@ -951,25 +859,6 @@
 			ParsePattern=""
 			/>
 		<Command
-			Name="start ssh ubuntu"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\putty.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.123"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
 			Name="Sync File to Source Control Project"
 			RunText="ss Get %f"
 			WorkingDir=""
@@ -1008,44 +897,6 @@
 			ParsePattern=""
 			/>
 		<Command
-			Name="test"
-			RunText="cmd start %d"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="TUMP"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\plink.exe&quot; -ssh -P 24040-pw xcosadmin root@192.168.199.1 &quot;tcpdump -i wlan0 -s 0 -w - not port 24040&quot; | &quot;C:\Program Files (x86)\Wireshark\Wireshark.exe&quot; -k -i -"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="1"
-			PasteOutput="0"
-			SaveFilesFirst="1"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="1"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern="^\([a-zA-Z].*\)(\([0-9][0-9]*\)).*"
-			/>
-		<Command
 			Name="Undo Check Out"
 			RunText="ss UndoCheckout %f"
 			WorkingDir=""
@@ -1073,120 +924,6 @@
 			PasteOutput="0"
 			SaveFilesFirst="0"
 			PauseWhenDone="0"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI BUILD WIFI"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\plink.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.123 &quot;cd /usr/local/src/op/xcos_op/openwrt_15.05/;make package/apfree_wifidog/compile V=s&quot;"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI COM6"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\putty.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.123"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI cp wifi to op"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\putty.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.121"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI ssh ub cmder"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\cmder\Cmder.exe&quot;"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI SSH UB CMDER POWER"
-			RunText="powershell -noexit -command &quot;ssh root@192.168.137.121&quot;"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
-			BeepWhenDone="0"
-			WaitUntilDone="0"
-			ReloadFiles="0"
-			ExitToWindows="0"
-			ParseOutput="0"
-			LineThenFile="0"
-			RegexType="Source Insight"
-			Preset="0"
-			ParsePattern=""
-			/>
-		<Command
-			Name="ZENGHI ssh ubuntu"
-			RunText="&quot;C:\Users\Administrator\Documents\Source Insight 4.0\Projects\Base\AStyle\putty.exe&quot; -ssh -P 22 -pw huangdezeng root@192.168.137.121"
-			WorkingDir=""
-			NormalWindow="1"
-			CaptureOutput="0"
-			PasteOutput="0"
-			SaveFilesFirst="0"
-			PauseWhenDone="1"
 			BeepWhenDone="0"
 			WaitUntilDone="0"
 			ReloadFiles="0"
@@ -1231,8 +968,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Custom Command Output"
@@ -1266,8 +1003,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Search Results"
@@ -1301,8 +1038,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C Source File"
@@ -1336,12 +1073,12 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C/C++ Source File"
-			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx;*.hh"
+			FileFilter="*.c;*.h;*.cpp;*.hpp;*.cxx;*.hxx"
 			Language="C/C++ Language"
 			ParsePattern=""
 			WordWrap="0"
@@ -1353,7 +1090,7 @@
 			LineUpWhiteSpace="1"
 			VisibleTabs="0"
 			VisibleSpaces="0"
-			ShowLineNumbers="0"
+			ShowLineNumbers="1"
 			ShowRightMargin="0"
 			ShowPageBreaks="0"
 			UseSymbolPane="1"
@@ -1361,18 +1098,18 @@
 			AllowAutocomplete="1"
 			AllowSmartPaste="1"
 			AllowSnippets="1"
-			ShowRefHighlights="0"
+			ShowRefHighlights="1"
 			TabWidth="4"
 			MarginWidth="120"
-			IndentWidth="4"
+			IndentWidth="1"
 			AutoInsertPairs="1"
 			ParsePatternSymbolType=""
 			AutoIndentMode="2"
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="C# Source File"
@@ -1406,12 +1143,12 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Objective-C File"
-			FileFilter="*.m;*.mm"
+			FileFilter="*.m"
 			Language="Objective-C"
 			ParsePattern=""
 			WordWrap="0"
@@ -1441,8 +1178,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Python File"
@@ -1476,8 +1213,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Interface Definition File"
@@ -1511,8 +1248,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="x86 Asm Source File"
@@ -1546,8 +1283,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Java Source File"
@@ -1581,8 +1318,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="JavaScript File"
@@ -1616,8 +1353,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Perl Source File"
@@ -1651,8 +1388,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="PHP File"
@@ -1686,8 +1423,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Active Server Page"
@@ -1721,8 +1458,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Visual Basic Source File"
@@ -1756,8 +1493,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Batch File"
@@ -1791,8 +1528,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="INI File"
@@ -1826,8 +1563,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Link Def File"
@@ -1861,8 +1598,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Make File"
@@ -1896,8 +1633,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="JSON File"
@@ -1931,8 +1668,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Resource File"
@@ -1966,8 +1703,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Source Insight Macro File"
@@ -2001,8 +1738,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Plain Text"
@@ -2036,8 +1773,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="HTML File"
@@ -2071,8 +1808,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Cascading Style Sheet"
@@ -2106,8 +1843,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Output File"
@@ -2141,8 +1878,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="Token Macro File"
@@ -2176,8 +1913,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="XML File"
@@ -2211,8 +1948,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="VHDL File"
@@ -2246,8 +1983,8 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 		<Type
 			Name="SI Tags File"
@@ -2281,111 +2018,40 @@
 			IndentOpenBrace="1"
 			IndentCloseBrace="1"
 			>
-			<ScreenFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-			<PrinterFont name="Courier New" psize="8" fpfamily="0" charset="0" />
-		</Type>
-		<Type
-			Name="LUC"
-			FileFilter="gen_lora_global_conf"
-			Language="Lua"
-			ParsePattern=""
-			WordWrap="0"
-			ExpandTabs="0"
-			EnterKeyIsEOL="1"
-			StatusbarMode="0"
-			AddToProject="1"
-			EmulateScreenFontsForPrinting="1"
-			LineUpWhiteSpace="1"
-			VisibleTabs="0"
-			VisibleSpaces="0"
-			ShowLineNumbers="1"
-			ShowRightMargin="0"
-			ShowPageBreaks="0"
-			UseSymbolPane="0"
-			UseOverview="0"
-			AllowAutocomplete="1"
-			AllowSmartPaste="0"
-			AllowSnippets="1"
-			ShowRefHighlights="0"
-			TabWidth="4"
-			MarginWidth="120"
-			IndentWidth="1"
-			AutoInsertPairs="0"
-			ParsePatternSymbolType=""
-			AutoIndentMode="1"
-			IndentOpenBrace="1"
-			IndentCloseBrace="1"
-			>
-			<ScreenFont name="DejaVu Sans Mono" psize="11" fpfamily="49" charset="0" />
-			<PrinterFont name="Courier New" psize="9" fpfamily="49" charset="0" />
-		</Type>
-		<Type
-			Name="ZENGHI"
-			FileFilter="*.c;*.h"
-			Language="ANSI C Language"
-			ParsePattern=""
-			WordWrap="0"
-			ExpandTabs="0"
-			EnterKeyIsEOL="1"
-			StatusbarMode="0"
-			AddToProject="1"
-			EmulateScreenFontsForPrinting="1"
-			LineUpWhiteSpace="1"
-			VisibleTabs="0"
-			VisibleSpaces="0"
-			ShowLineNumbers="1"
-			ShowRightMargin="0"
-			ShowPageBreaks="0"
-			UseSymbolPane="0"
-			UseOverview="0"
-			AllowAutocomplete="1"
-			AllowSmartPaste="0"
-			AllowSnippets="1"
-			ShowRefHighlights="0"
-			TabWidth="4"
-			MarginWidth="120"
-			IndentWidth="1"
-			AutoInsertPairs="0"
-			ParsePatternSymbolType=""
-			AutoIndentMode="1"
-			IndentOpenBrace="1"
-			IndentCloseBrace="1"
-			>
-			<ScreenFont name="DejaVu Sans Mono" psize="11" fpfamily="49" charset="0" />
-			<PrinterFont name="Courier New" psize="9" fpfamily="49" charset="0" />
+			<ScreenFont name="Consolas" psize="9" fpfamily="0" charset="0" />
+			<PrinterFont name="Consolas" psize="9" fpfamily="0" charset="0" />
 		</Type>
 	</FileTypes>
 	<Styles
-		StyleAppVer="4.00.0093"
+		StyleAppVer="4.00.0084"
 		>
 		<Style Name="Default Text" />
 		<Style
 			Name="Number"
-			SpaceAbove="400"
-			TextColor="#b5ce89"
+			TextColor="#cc0066"
 			FontName="Consolas"
 			FontPitchFamily="1"
 			FontCharset="0"
 			/>
-		<Style Name="Operator" TextColor="#d4d4d4" />
-		<Style Name="Delimiter" TextColor="#d4d4d4" />
-		<Style Name="Comment" TextColor="#608b4e" />
-		<Style Name="String" FixedWhiteSpace="0" TextColor="#dfb3b0" />
-		<Style Name="Keyword" TextColor="#569cd6" />
-		<Style Name="Control" Bold="1" TextColor="#c586a8" />
+		<Style Name="Operator" TextColor="#fdeeca" />
+		<Style Name="Delimiter" KeepWithNextLine="1" TextColor="#d4d4d4" />
+		<Style Name="Comment" TextColor="#5e9955" />
+		<Style Name="String" FixedWhiteSpace="0" TextColor="#ce9178" />
+		<Style Name="Keyword" TextColor="#fdeeca" />
+		<Style Name="Control" Bold="1" TextColor="#cc0066" />
 		<Style Name="Special" Bold="1" Italic="1" TextColor="#9eff97" />
-		<Style Name="Boolean" TextColor="#ffffff" />
+		<Style Name="Boolean" TextColor="#ba75ff" />
 		<Style Name="Debug" TextColor="#ff0000" Italic="1" Underline="Dotted" />
-		<Style Name="Null Value" TextColor="#ff0000" />
+		<Style Name="Null Value" TextColor="#cc0066" />
 		<Style Name="System" TextColor="#008000" />
-		<Style Name="Declaration" Bold="1" TextColor="#408080" />
+		<Style Name="Declaration" Bold="1" TextColor="#36b49a" />
 		<Style
 			Name="Ref To Local"
-			TextColor="#d4d4d4"
+			TextColor="#fbd784"
 			ParentStyle="Reference"
 			/>
-		<Style Name="Reference" TextColor="#d4d4d4" />
-		<Style Name="Directive" TextColor="#c586c0" ParentStyle="Control" />
+		<Style Name="Reference" TextColor="#fdeeca" />
+		<Style Name="Directive" TextColor="#ff0080" ParentStyle="Control" />
 		<Style
 			Name="Line Number"
 			TextColor="#8f8f8f"
@@ -2411,7 +2077,12 @@
 			Underline="Single"
 			ParentStyle="Declaration"
 			/>
-		<Style Name="Ref to Parameter" Bold="1" ParentStyle="Ref To Local" />
+		<Style
+			Name="Ref to Parameter"
+			Bold="1"
+			TextColor="#b0a911"
+			ParentStyle="Ref To Local"
+			/>
 		<Style Name="Declare Template" ParentStyle="Declare Function" />
 		<Style Name="Declare Package" ParentStyle="Declaration" />
 		<Style Name="Ref to Template" ParentStyle="Reference" />
@@ -2422,54 +2093,38 @@
 			Bold="1"
 			ParentStyle="Reference"
 			/>
-		<Style Name="Selection" TextColor="#ffffff" BackColor="#235c50" />
+		<Style Name="Selection" BackColor="#264f78" />
 		<Style Name="Declare Namespace" ParentStyle="Declaration" />
 		<Style Name="Ref to Namespace" ParentStyle="Reference" />
-		<Style
-			Name="Declare Local"
-			TextColor="#84b071"
-			ParentStyle="Declaration"
-			/>
+		<Style Name="Declare Local" ParentStyle="Declaration" />
 		<Style Name="Declare Member" ParentStyle="Declaration" />
 		<Style Name="Declare Method" ParentStyle="Declare Function" />
 		<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 		<Style
 			Name="Declare Function"
 			Scale="140"
+			Bold="1"
 			KeepWithNextLine="1"
-			TextColor="#d0dcaa"
-			ShadowColor="#c0c0c0"
+			FontName="Consolas"
+			FontPitchFamily="49"
+			FontCharset="0"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Macro" ParentStyle="Declaration" />
 		<Style
 			Name="Declare Struct"
-			Scale="140"
-			ShadowColor="#c0c0c0"
 			KeepWithNextLine="1"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
 		<Style Name="Declare Typedef" ParentStyle="Declare Struct" />
 		<Style Name="Declare Class" Scale="120" ParentStyle="Declare Struct" />
-		<Style
-			Name="Declare Var"
-			TextColor="#d4d4d4"
-			ParentStyle="Declaration"
-			/>
-		<Style
-			Name="Declare Constant"
-			TextColor="#d0dcaa"
-			ParentStyle="Declaration"
-			/>
+		<Style Name="Declare Var" ParentStyle="Declaration" />
+		<Style Name="Declare Constant" ParentStyle="Declaration" />
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
 		<Style Name="Declare Enum Const" ParentStyle="Declaration" />
 		<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
-		<Style
-			Name="Declare Prototype"
-			TextColor="#d0dcaa"
-			ParentStyle="Declare Function"
-			/>
+		<Style Name="Declare Prototype" ParentStyle="Declare Function" />
 		<Style Name="Preprocessor" ParentStyle="Declaration" />
 		<Style
 			Name="Search Result Heading"
@@ -2491,34 +2146,26 @@
 		<Style
 			Name="Ref to Func"
 			Bold="1"
-			TextColor="#91eecf"
+			TextColor="#f47c59"
 			ParentStyle="Reference"
 			/>
-		<Style Name="Ref to Macro" ParentStyle="Ref to Func" />
-		<Style
-			Name="Ref to Struct"
-			TextColor="#00d5d5"
-			ParentStyle="Reference"
-			/>
+		<Style Name="Ref to Macro" Italic="1" ParentStyle="Ref to Func" />
+		<Style Name="Ref to Struct" ParentStyle="Reference" />
 		<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
 		<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
 		<Style
 			Name="Ref to Global Var"
 			Bold="1"
 			Italic="1"
-			TextColor="#61a714"
+			TextColor="#ba75ff"
 			ParentStyle="Reference"
 			/>
 		<Style
 			Name="Ref to Const"
-			TextColor="#dcdcaa"
+			TextColor="#cc0066"
 			ParentStyle="Reference"
 			/>
-		<Style
-			Name="Ref to Enum"
-			TextColor="#569cd6"
-			ParentStyle="Reference"
-			/>
+		<Style Name="Ref to Enum" ParentStyle="Reference" />
 		<Style Name="Ref to Custom" ParentStyle="Reference" />
 		<Style Name="Ref to EdMacro" ParentStyle="Reference" />
 		<Style Name="Ref to Class" ParentStyle="Ref to Struct" />
@@ -2528,7 +2175,7 @@
 		<Style Name="Ref to Preproc" ParentStyle="Reference" />
 		<Style Name="Ref to Search" ParentStyle="Reference" />
 		<Style Name="Ref to Label" ParentStyle="Reference" />
-		<Style Name="Ref to Member" ParentStyle="Reference" />
+		<Style Name="Ref to Member" Italic="1" ParentStyle="Reference" />
 		<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
 		<Style Name="Ref to Resource" ParentStyle="Reference" />
 		<Style Name="Ref to File" ParentStyle="Reference" />
@@ -2576,7 +2223,6 @@
 		<Style
 			Name="Declare Parameter"
 			Underline="Single"
-			TextColor="#d4d4d4"
 			ParentStyle="Declaration"
 			/>
 		<Style
@@ -2625,11 +2271,15 @@
 			/>
 		<Style
 			Name="Comment Single Line"
-			TextColor="#47673a"
+			TextColor="#608b4e"
 			ParentStyle="Comment"
 			/>
 		<Style Name="Comment Multi Line" ParentStyle="Comment" />
-		<Style Name="Parentheses" ParentStyle="Delimiter" />
+		<Style
+			Name="Parentheses"
+			TextColor="#fdeeca"
+			ParentStyle="Delimiter"
+			/>
 		<Style Name="HTML Body Text" FixedWhiteSpace="0" />
 		<Style Name="HTML Tag" TextColor="#008000" Bold="1" />
 		<Style Name="Standard Property" ParentStyle="Ref to Member" />
@@ -2670,7 +2320,7 @@
 			Name="Snippet Input Field"
 			Bold="1"
 			TextColor="#000000"
-			BackColor="#c1ebff"
+			BackColor="#235c50"
 			/>
 		<Style Name="Register" TextColor="#008000" Bold="1" />
 		<Style
@@ -2680,11 +2330,7 @@
 			TextColor="#408080"
 			/>
 		<Style Name="Instruction" ParentStyle="Control" />
-		<Style
-			Name="Reference Highlight"
-			TextColor="#000000"
-			BackColor="#aae1ff"
-			/>
+		<Style Name="Reference Highlight" BackColor="#343a40" />
 		<Style
 			Name="Declare VHDL Entity"
 			Scale="140"
@@ -2717,6 +2363,7 @@
 		<Style Name="Ref to VHDL Component" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Process" ParentStyle="Reference" />
 		<Style Name="Ref to VHDL Config" ParentStyle="Reference" />
+		<Style Name="Include" />
 	</Styles>
 	<FTPSites>
 		<SiteList/>
@@ -2729,7 +2376,7 @@
 			NoAnimation="1"
 			NoThemes="0"
 			NoSmoothScroll="1"
-			NoDropShadowText="0"
+			NoDropShadowText="1"
 			NoDblBuffer="0"
 			ScalePercent="100"
 			/>
@@ -2739,7 +2386,7 @@
 		RunInBackground="1"
 		RunEveryMinutes="60"
 		AddNewFiles="0"
-		RemoveOldFiles="1"
+		RemoveOldFiles="0"
 		SyncOnStartup="1"
 		/>
 	<ProjectDefaults
@@ -2752,7 +2399,7 @@
 		MasterFileList="%PROJECT_SOURCE_DIR%\%PROJECT_NAME%_filelist.txt"
 		/>
 	<Logging
-		UseLogFile="1"
+		UseLogFile="0"
 		CheckingLevel="1"
 		LogUserCommands="0"
 		LogUserFileNames="0"
@@ -2900,10 +2547,6 @@
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
-				<Item Keyword="int8_t" Style="Keyword" />
-				<Item Keyword="int16_t" Style="Keyword" />
-				<Item Keyword="int32_t" Style="Keyword" />
-				<Item Keyword="int64_t" Style="Keyword" />
 			</Keywords>
 		</Language>
 		<Language
@@ -4502,31 +4145,28 @@
 			<CustomParsing/>
 			<Ranges/>
 			<Keywords>
+				<Item Keyword="#define" Style="Keyword" />
+				<Item Keyword="#elif" Style="Directive" />
+				<Item Keyword="#else" Style="Directive" />
+				<Item Keyword="#endif" Style="Directive" />
+				<Item Keyword="#if" Style="Directive" />
+				<Item Keyword="#ifdef" Style="Directive" />
+				<Item Keyword="#ifndef" Style="Directive" />
+				<Item Keyword="#include" Style="Include" />
+				<Item Keyword="#pragma" Style="Keyword" />
+				<Item Keyword="#undef" Style="Keyword" />
 				<Item Keyword="(" Style="Delimiter" />
 				<Item Keyword=")" Style="Delimiter" />
-				<Item Keyword="{" Style="Delimiter" />
-				<Item Keyword="}" Style="Delimiter" />
-				<Item Keyword="[" Style="Delimiter" />
-				<Item Keyword="]" Style="Delimiter" />
 				<Item Keyword="," Style="Delimiter" />
 				<Item Keyword=";" Style="Delimiter" />
-				<Item Keyword="__try" Style="Control" />
-				<Item Keyword="__except" Style="Control" />
-				<Item Keyword="__finally" Style="Control" />
-				<Item Keyword="__cdecl" Style="Keyword" />
-				<Item Keyword="__asm" Style="Keyword" />
-				<Item Keyword="__super" Style="Keyword" />
-				<Item Keyword="__gc" Style="Keyword" />
-				<Item Keyword="__abstract" Style="Keyword" />
-				<Item Keyword="__delegate" Style="Keyword" />
-				<Item Keyword="__event" Style="Keyword" />
-				<Item Keyword="__property" Style="Keyword" />
 				<Item Keyword="abstract" Style="Keyword" />
+				<Item Keyword="__abstract" Style="Keyword" />
 				<Item Keyword="alignas" Style="Keyword" />
 				<Item Keyword="alignof" Style="Keyword" />
 				<Item Keyword="asm" Style="Keyword" />
-				<Item Keyword="assert" Style="Debug" />
+				<Item Keyword="__asm" Style="Keyword" />
 				<Item Keyword="Assert" Style="Debug" />
+				<Item Keyword="assert" Style="Debug" />
 				<Item Keyword="async" Style="Keyword" />
 				<Item Keyword="auto" Style="Keyword" />
 				<Item Keyword="bool" Style="Keyword" />
@@ -4534,6 +4174,7 @@
 				<Item Keyword="case" Style="Control" />
 				<Item Keyword="catch" Style="Control" />
 				<Item Keyword="cdecl" Style="Keyword" />
+				<Item Keyword="__cdecl" Style="Keyword" />
 				<Item Keyword="char" Style="Keyword" />
 				<Item Keyword="class" Style="Control" />
 				<Item Keyword="coclass" Style="Control" />
@@ -4544,104 +4185,102 @@
 				<Item Keyword="cout" Style="Keyword" />
 				<Item Keyword="decltype" Style="Keyword" />
 				<Item Keyword="default" Style="Control" />
-				<Item Keyword="#define" Style="Keyword" />
+				<Item Keyword="__delegate" Style="Keyword" />
 				<Item Keyword="delete" Style="Control" />
 				<Item Keyword="do" Style="Control" />
 				<Item Keyword="double" Style="Keyword" />
-				<Item Keyword="dynamic_cast" Style="Keyword" />
 				<Item Keyword="DWORD" Style="Keyword" />
+				<Item Keyword="dynamic_cast" Style="Keyword" />
 				<Item Keyword="each" Style="Control" />
-				<Item Keyword="#elif" Style="Directive" />
 				<Item Keyword="else" Style="Control" />
-				<Item Keyword="#else" Style="Directive" />
-				<Item Keyword="#endif" Style="Directive" />
 				<Item Keyword="enum" Style="Control" />
+				<Item Keyword="__event" Style="Keyword" />
 				<Item Keyword="except" Style="Control" />
+				<Item Keyword="__except" Style="Control" />
 				<Item Keyword="exception" Style="Keyword" />
 				<Item Keyword="explicit" Style="Keyword" />
 				<Item Keyword="export" Style="Keyword" />
 				<Item Keyword="extern" Style="Keyword" />
-				<Item Keyword="false" Style="Boolean" />
 				<Item Keyword="FALSE" Style="Boolean" />
-				<Item Keyword="FAR" Style="Keyword" />
+				<Item Keyword="false" Style="Boolean" />
 				<Item Keyword="far" Style="Keyword" />
+				<Item Keyword="FAR" Style="Keyword" />
 				<Item Keyword="final" Style="Keyword" />
+				<Item Keyword="__finally" Style="Control" />
 				<Item Keyword="float" Style="Keyword" />
 				<Item Keyword="for" Style="Control" />
-				<Item Keyword="for_each" Style="Control" />
 				<Item Keyword="fortran" Style="Keyword" />
+				<Item Keyword="for_each" Style="Control" />
 				<Item Keyword="friend" Style="Keyword" />
+				<Item Keyword="__gc" Style="Keyword" />
 				<Item Keyword="goto" Style="Control" />
 				<Item Keyword="HUGE" Style="Keyword" />
 				<Item Keyword="huge" Style="Keyword" />
 				<Item Keyword="if" Style="Control" />
-				<Item Keyword="#if" Style="Directive" />
-				<Item Keyword="#ifdef" Style="Directive" />
-				<Item Keyword="#ifndef" Style="Directive" />
-				<Item Keyword="#include" Style="Keyword" />
 				<Item Keyword="inline" Style="Keyword" />
 				<Item Keyword="INT" Style="Keyword" />
 				<Item Keyword="int" Style="Keyword" />
 				<Item Keyword="interface" Style="Control" />
-				<Item Keyword="LONG" Style="Keyword" />
 				<Item Keyword="long" Style="Keyword" />
+				<Item Keyword="LONG" Style="Keyword" />
 				<Item Keyword="mutable" Style="Keyword" />
 				<Item Keyword="namespace" Style="Control" />
+				<Item Keyword="near" Style="Keyword" />
 				<Item Keyword="NEAR" Style="Keyword" />
+				<Item Keyword="new" Style="Control" />
 				<Item Keyword="NULL" Style="Null Value" />
 				<Item Keyword="nullptr" Style="Null Value" />
 				<Item Keyword="__nullptr" Style="Null Value" />
-				<Item Keyword="near" Style="Keyword" />
-				<Item Keyword="new" Style="Control" />
 				<Item Keyword="operator" Style="Keyword" />
 				<Item Keyword="override" Style="Keyword" />
-				<Item Keyword="PASCAL" Style="Keyword" />
 				<Item Keyword="pascal" Style="Keyword" />
-				<Item Keyword="#pragma" Style="Keyword" />
+				<Item Keyword="PASCAL" Style="Keyword" />
 				<Item Keyword="private" Style="Keyword" />
+				<Item Keyword="__property" Style="Keyword" />
 				<Item Keyword="protected" Style="Keyword" />
 				<Item Keyword="public" Style="Keyword" />
 				<Item Keyword="ref" Style="Keyword" />
+				<Item Keyword="REGISTER" Style="Keyword" />
 				<Item Keyword="register" Style="Keyword" />
 				<Item Keyword="reinterpret_cast" Style="Keyword" />
-				<Item Keyword="REGISTER" Style="Keyword" />
 				<Item Keyword="return" Style="Control" />
 				<Item Keyword="sealed" Style="Keyword" />
-				<Item Keyword="SHORT" Style="Keyword" />
 				<Item Keyword="short" Style="Keyword" />
+				<Item Keyword="SHORT" Style="Keyword" />
 				<Item Keyword="signed" Style="Keyword" />
 				<Item Keyword="sizeof" Style="Keyword" />
 				<Item Keyword="static" Style="Keyword" />
 				<Item Keyword="static_cast" Style="Keyword" />
 				<Item Keyword="struct" Style="Control" />
+				<Item Keyword="__super" Style="Keyword" />
 				<Item Keyword="switch" Style="Control" />
 				<Item Keyword="template" Style="Control" />
 				<Item Keyword="this" Style="Keyword" />
 				<Item Keyword="thread_local" Style="Keyword" />
 				<Item Keyword="throw" Style="Control" />
-				<Item Keyword="true" Style="Boolean" />
 				<Item Keyword="TRUE" Style="Boolean" />
+				<Item Keyword="true" Style="Boolean" />
 				<Item Keyword="try" Style="Control" />
+				<Item Keyword="__try" Style="Control" />
 				<Item Keyword="typedef" Style="Control" />
 				<Item Keyword="typeid" Style="Keyword" />
 				<Item Keyword="typename" Style="Keyword" />
 				<Item Keyword="UINT" Style="Keyword" />
-				<Item Keyword="#undef" Style="Keyword" />
 				<Item Keyword="union" Style="Control" />
 				<Item Keyword="unsigned" Style="Keyword" />
 				<Item Keyword="using" Style="Keyword" />
-				<Item Keyword="VOID" Style="Keyword" />
 				<Item Keyword="value" Style="Keyword" />
 				<Item Keyword="virtual" Style="Keyword" />
 				<Item Keyword="void" Style="Keyword" />
+				<Item Keyword="VOID" Style="Keyword" />
 				<Item Keyword="volatile" Style="Keyword" />
 				<Item Keyword="wchar_t" Style="Keyword" />
 				<Item Keyword="while" Style="Control" />
 				<Item Keyword="WORD" Style="Keyword" />
-				<Item Keyword="int8_t" Style="Keyword" />
-				<Item Keyword="int16_t" Style="Keyword" />
-				<Item Keyword="int32_t" Style="Keyword" />
-				<Item Keyword="int64_t" Style="Keyword" />
+				<Item Keyword="[" Style="Delimiter" />
+				<Item Keyword="{" Style="Delimiter" />
+				<Item Keyword="}" Style="Delimiter" />
+				<Item Keyword="]" Style="Delimiter" />
 			</Keywords>
 		</Language>
 		<Language
@@ -7870,420 +7509,12 @@
 				<Item Keyword="null" Style="Keyword" />
 			</Keywords>
 		</Language>
-		<Language
-			Name="Lua"
-			Comment=""
-			CaseSensitive="0"
-			CPreprocessor="0"
-			SmartIndent="0"
-			ContainsSourceCode="1"
-			SyntaxFormatting="1"
-			UseRegexParsing="1"
-			SyntaxDecorations="0"
-			CommentStyles="0"
-			AllowSmartTab="0"
-			DetectNumbers="1"
-			CHexNum="0"
-			IntelHexNum="0"
-			MotorolaHexNum="0"
-			BasicHexNum="0"
-			IntelOctalNum="0"
-			QOctalNum="0"
-			NonAlphaNumIdentChars="_"
-			>
-			<CustomParsing>
-				<Expression
-					SymbolType="Function"
-					Pattern="function\w+\([a-zA-Z][a-zA-Z0-9]*\)"
-					RegexType="Source Insight"
-					/>
-			</CustomParsing>
-			<Ranges>
-				<Range
-					Type="Line"
-					AllowNesting="0"
-					ParseInside="0"
-					ReadOnly="0"
-					StyleName="Comment Single Line"
-					StyleDelimiter="1"
-					StartString="--"
-					EscapeString=""
-					ValidateColumns="0"
-					FirstColumn="0"
-					LastColumn="0"
-					/>
-				<Range
-					Type="Multiline"
-					AllowNesting="0"
-					ParseInside="0"
-					ReadOnly="0"
-					StyleName="String"
-					StyleDelimiter="1"
-					StartString="&apos;"
-					EndString="&apos;"
-					EscapeString="\"
-					ValidateColumns="0"
-					FirstColumn="0"
-					LastColumn="0"
-					/>
-				<Range
-					Type="Multiline"
-					AllowNesting="0"
-					ParseInside="0"
-					ReadOnly="0"
-					StyleName="String"
-					StyleDelimiter="1"
-					StartString="&quot;"
-					EndString="&quot;"
-					EscapeString="\"
-					ValidateColumns="0"
-					FirstColumn="0"
-					LastColumn="0"
-					/>
-			</Ranges>
-			<Keywords>
-				<Item Keyword="#" Style="Operator" />
-				<Item Keyword="%" Style="Operator" />
-				<Item Keyword="(" Style="Operator" />
-				<Item Keyword=")" Style="Operator" />
-				<Item Keyword="*" Style="Operator" />
-				<Item Keyword="+" Style="Operator" />
-				<Item Keyword="," Style="Operator" />
-				<Item Keyword="-" Style="Operator" />
-				<Item Keyword="." Style="Operator" />
-				<Item Keyword=".." Style="Operator" />
-				<Item Keyword="..." Style="Operator" />
-				<Item Keyword="/" Style="Operator" />
-				<Item Keyword=":" Style="Operator" />
-				<Item Keyword="::=" Style="Operator" />
-				<Item Keyword=";" Style="Operator" />
-				<Item Keyword="&lt;" Style="Operator" />
-				<Item Keyword="&lt;=" Style="Operator" />
-				<Item Keyword="=" Style="Operator" />
-				<Item Keyword="==" Style="Operator" />
-				<Item Keyword="&gt;" Style="Operator" />
-				<Item Keyword="&gt;=" Style="Operator" />
-				<Item Keyword="and" Style="Control" />
-				<Item Keyword="assert" Style="Keyword" />
-				<Item Keyword="break" Style="Control" />
-				<Item Keyword="collectgarbage" Style="Keyword" />
-				<Item Keyword="coroutine.create" Style="Keyword" />
-				<Item Keyword="coroutine.resume" Style="Keyword" />
-				<Item Keyword="coroutine.running" Style="Keyword" />
-				<Item Keyword="coroutine.status" Style="Keyword" />
-				<Item Keyword="coroutine.wrap" Style="Keyword" />
-				<Item Keyword="coroutine.yield" Style="Keyword" />
-				<Item Keyword="debug.debug" Style="Keyword" />
-				<Item Keyword="debug.getfenv" Style="Keyword" />
-				<Item Keyword="debug.gethook" Style="Keyword" />
-				<Item Keyword="debug.getinfo" Style="Keyword" />
-				<Item Keyword="debug.getlocal" Style="Keyword" />
-				<Item Keyword="debug.getmetatable" Style="Keyword" />
-				<Item Keyword="debug.getregistry" Style="Keyword" />
-				<Item Keyword="debug.getupvalue" Style="Keyword" />
-				<Item Keyword="debug.setfenv" Style="Keyword" />
-				<Item Keyword="debug.sethook" Style="Keyword" />
-				<Item Keyword="debug.setlocal" Style="Keyword" />
-				<Item Keyword="debug.setmetatable" Style="Keyword" />
-				<Item Keyword="debug.setupvalue" Style="Keyword" />
-				<Item Keyword="debug.traceback" Style="Keyword" />
-				<Item Keyword="do" Style="Control" />
-				<Item Keyword="dofile" Style="Keyword" />
-				<Item Keyword="else" Style="Control" />
-				<Item Keyword="elseif" Style="Control" />
-				<Item Keyword="end" Style="Control" />
-				<Item Keyword="error" Style="Keyword" />
-				<Item Keyword="false" Style="Control" />
-				<Item Keyword="file:close" Style="Keyword" />
-				<Item Keyword="file:flush" Style="Keyword" />
-				<Item Keyword="file:lines" Style="Keyword" />
-				<Item Keyword="file:read" Style="Keyword" />
-				<Item Keyword="file:seek" Style="Keyword" />
-				<Item Keyword="file:setvbuf" Style="Keyword" />
-				<Item Keyword="file:write" Style="Keyword" />
-				<Item Keyword="for" Style="Control" />
-				<Item Keyword="function" Style="Control" />
-				<Item Keyword="_G" Style="Keyword" />
-				<Item Keyword="getfenv" Style="Keyword" />
-				<Item Keyword="getmetatable" Style="Keyword" />
-				<Item Keyword="if" Style="Control" />
-				<Item Keyword="in" Style="Control" />
-				<Item Keyword="io.close" Style="Keyword" />
-				<Item Keyword="io.flush" Style="Keyword" />
-				<Item Keyword="io.input" Style="Keyword" />
-				<Item Keyword="io.lines" Style="Keyword" />
-				<Item Keyword="io.open" Style="Keyword" />
-				<Item Keyword="io.output" Style="Keyword" />
-				<Item Keyword="io.popen" Style="Keyword" />
-				<Item Keyword="io.read" Style="Keyword" />
-				<Item Keyword="io.tmpfile" Style="Keyword" />
-				<Item Keyword="io.type" Style="Keyword" />
-				<Item Keyword="io.write" Style="Keyword" />
-				<Item Keyword="ipairs" Style="Keyword" />
-				<Item Keyword="load" Style="Keyword" />
-				<Item Keyword="loadfile" Style="Keyword" />
-				<Item Keyword="loadstring" Style="Keyword" />
-				<Item Keyword="local" Style="Keyword" />
-				<Item Keyword="luaL_addchar" Style="Keyword" />
-				<Item Keyword="luaL_addlstring" Style="Keyword" />
-				<Item Keyword="luaL_addsize" Style="Keyword" />
-				<Item Keyword="luaL_addstring" Style="Keyword" />
-				<Item Keyword="luaL_addvalue" Style="Keyword" />
-				<Item Keyword="luaL_argcheck" Style="Keyword" />
-				<Item Keyword="luaL_argerror" Style="Keyword" />
-				<Item Keyword="luaL_Buffer" Style="Keyword" />
-				<Item Keyword="luaL_buffinit" Style="Keyword" />
-				<Item Keyword="luaL_callmeta" Style="Keyword" />
-				<Item Keyword="luaL_checkany" Style="Keyword" />
-				<Item Keyword="luaL_checkint" Style="Keyword" />
-				<Item Keyword="luaL_checkinteger" Style="Keyword" />
-				<Item Keyword="luaL_checklong" Style="Keyword" />
-				<Item Keyword="luaL_checklstring" Style="Keyword" />
-				<Item Keyword="luaL_checknumber" Style="Keyword" />
-				<Item Keyword="luaL_checkoption" Style="Keyword" />
-				<Item Keyword="luaL_checkstack" Style="Keyword" />
-				<Item Keyword="luaL_checkstring" Style="Keyword" />
-				<Item Keyword="luaL_checktype" Style="Keyword" />
-				<Item Keyword="luaL_checkudata" Style="Keyword" />
-				<Item Keyword="luaL_dofile" Style="Keyword" />
-				<Item Keyword="luaL_dostring" Style="Keyword" />
-				<Item Keyword="luaL_error" Style="Keyword" />
-				<Item Keyword="luaL_getmetafield" Style="Keyword" />
-				<Item Keyword="luaL_getmetatable" Style="Keyword" />
-				<Item Keyword="luaL_gsub" Style="Keyword" />
-				<Item Keyword="luaL_loadbuffer" Style="Keyword" />
-				<Item Keyword="luaL_loadfile" Style="Keyword" />
-				<Item Keyword="luaL_loadstring" Style="Keyword" />
-				<Item Keyword="luaL_newmetatable" Style="Keyword" />
-				<Item Keyword="luaL_newstate" Style="Keyword" />
-				<Item Keyword="luaL_openlibs" Style="Keyword" />
-				<Item Keyword="luaL_optint" Style="Keyword" />
-				<Item Keyword="luaL_optinteger" Style="Keyword" />
-				<Item Keyword="luaL_optlong" Style="Keyword" />
-				<Item Keyword="luaL_optlstring" Style="Keyword" />
-				<Item Keyword="luaL_optnumber" Style="Keyword" />
-				<Item Keyword="luaL_optstring" Style="Keyword" />
-				<Item Keyword="luaL_prepbuffer" Style="Keyword" />
-				<Item Keyword="luaL_pushresult" Style="Keyword" />
-				<Item Keyword="luaL_ref" Style="Keyword" />
-				<Item Keyword="luaL_Reg" Style="Keyword" />
-				<Item Keyword="luaL_register" Style="Keyword" />
-				<Item Keyword="luaL_typename" Style="Keyword" />
-				<Item Keyword="luaL_typerror" Style="Keyword" />
-				<Item Keyword="luaL_unref" Style="Keyword" />
-				<Item Keyword="luaL_where" Style="Keyword" />
-				<Item Keyword="lua_Alloc" Style="Keyword" />
-				<Item Keyword="lua_atpanic" Style="Keyword" />
-				<Item Keyword="lua_call" Style="Keyword" />
-				<Item Keyword="lua_CFunction" Style="Keyword" />
-				<Item Keyword="lua_checkstack" Style="Keyword" />
-				<Item Keyword="lua_close" Style="Keyword" />
-				<Item Keyword="lua_concat" Style="Keyword" />
-				<Item Keyword="lua_cpcall" Style="Keyword" />
-				<Item Keyword="lua_createtable" Style="Keyword" />
-				<Item Keyword="lua_Debug" Style="Keyword" />
-				<Item Keyword="lua_dump" Style="Keyword" />
-				<Item Keyword="lua_equal" Style="Keyword" />
-				<Item Keyword="lua_error" Style="Keyword" />
-				<Item Keyword="lua_gc" Style="Keyword" />
-				<Item Keyword="lua_getallocf" Style="Keyword" />
-				<Item Keyword="lua_getfenv" Style="Keyword" />
-				<Item Keyword="lua_getfield" Style="Keyword" />
-				<Item Keyword="lua_getglobal" Style="Keyword" />
-				<Item Keyword="lua_gethook" Style="Keyword" />
-				<Item Keyword="lua_gethookcount" Style="Keyword" />
-				<Item Keyword="lua_gethookmask" Style="Keyword" />
-				<Item Keyword="lua_getinfo" Style="Keyword" />
-				<Item Keyword="lua_getlocal" Style="Keyword" />
-				<Item Keyword="lua_getmetatable" Style="Keyword" />
-				<Item Keyword="lua_getstack" Style="Keyword" />
-				<Item Keyword="lua_gettable" Style="Keyword" />
-				<Item Keyword="lua_gettop" Style="Keyword" />
-				<Item Keyword="lua_getupvalue" Style="Keyword" />
-				<Item Keyword="lua_Hook" Style="Keyword" />
-				<Item Keyword="lua_insert" Style="Keyword" />
-				<Item Keyword="lua_Integer" Style="Keyword" />
-				<Item Keyword="lua_isboolean" Style="Keyword" />
-				<Item Keyword="lua_iscfunction" Style="Keyword" />
-				<Item Keyword="lua_isfunction" Style="Keyword" />
-				<Item Keyword="lua_islightuserdata" Style="Keyword" />
-				<Item Keyword="lua_isnil" Style="Keyword" />
-				<Item Keyword="lua_isnone" Style="Keyword" />
-				<Item Keyword="lua_isnoneornil" Style="Keyword" />
-				<Item Keyword="lua_isnumber" Style="Keyword" />
-				<Item Keyword="lua_isstring" Style="Keyword" />
-				<Item Keyword="lua_istable" Style="Keyword" />
-				<Item Keyword="lua_isthread" Style="Keyword" />
-				<Item Keyword="lua_isuserdata" Style="Keyword" />
-				<Item Keyword="lua_lessthan" Style="Keyword" />
-				<Item Keyword="lua_load" Style="Keyword" />
-				<Item Keyword="lua_newstate" Style="Keyword" />
-				<Item Keyword="lua_newtable" Style="Keyword" />
-				<Item Keyword="lua_newthread" Style="Keyword" />
-				<Item Keyword="lua_newuserdata" Style="Keyword" />
-				<Item Keyword="lua_next" Style="Keyword" />
-				<Item Keyword="lua_Number" Style="Keyword" />
-				<Item Keyword="lua_objlen" Style="Keyword" />
-				<Item Keyword="lua_pcall" Style="Keyword" />
-				<Item Keyword="lua_pop" Style="Keyword" />
-				<Item Keyword="lua_pushboolean" Style="Keyword" />
-				<Item Keyword="lua_pushcclosure" Style="Keyword" />
-				<Item Keyword="lua_pushcfunction" Style="Keyword" />
-				<Item Keyword="lua_pushfstring" Style="Keyword" />
-				<Item Keyword="lua_pushinteger" Style="Keyword" />
-				<Item Keyword="lua_pushlightuserdata" Style="Keyword" />
-				<Item Keyword="lua_pushliteral" Style="Keyword" />
-				<Item Keyword="lua_pushlstring" Style="Keyword" />
-				<Item Keyword="lua_pushnil" Style="Keyword" />
-				<Item Keyword="lua_pushnumber" Style="Keyword" />
-				<Item Keyword="lua_pushstring" Style="Keyword" />
-				<Item Keyword="lua_pushthread" Style="Keyword" />
-				<Item Keyword="lua_pushvalue" Style="Keyword" />
-				<Item Keyword="lua_pushvfstring" Style="Keyword" />
-				<Item Keyword="lua_rawequal" Style="Keyword" />
-				<Item Keyword="lua_rawget" Style="Keyword" />
-				<Item Keyword="lua_rawgeti" Style="Keyword" />
-				<Item Keyword="lua_rawset" Style="Keyword" />
-				<Item Keyword="lua_rawseti" Style="Keyword" />
-				<Item Keyword="lua_Reader" Style="Keyword" />
-				<Item Keyword="lua_register" Style="Keyword" />
-				<Item Keyword="lua_remove" Style="Keyword" />
-				<Item Keyword="lua_replace" Style="Keyword" />
-				<Item Keyword="lua_resume" Style="Keyword" />
-				<Item Keyword="lua_setallocf" Style="Keyword" />
-				<Item Keyword="lua_setfenv" Style="Keyword" />
-				<Item Keyword="lua_setfield" Style="Keyword" />
-				<Item Keyword="lua_setglobal" Style="Keyword" />
-				<Item Keyword="lua_sethook" Style="Keyword" />
-				<Item Keyword="lua_setlocal" Style="Keyword" />
-				<Item Keyword="lua_setmetatable" Style="Keyword" />
-				<Item Keyword="lua_settable" Style="Keyword" />
-				<Item Keyword="lua_settop" Style="Keyword" />
-				<Item Keyword="lua_setupvalue" Style="Keyword" />
-				<Item Keyword="lua_State" Style="Keyword" />
-				<Item Keyword="lua_status" Style="Keyword" />
-				<Item Keyword="lua_toboolean" Style="Keyword" />
-				<Item Keyword="lua_tocfunction" Style="Keyword" />
-				<Item Keyword="lua_tointeger" Style="Keyword" />
-				<Item Keyword="lua_tolstring" Style="Keyword" />
-				<Item Keyword="lua_tonumber" Style="Keyword" />
-				<Item Keyword="lua_topointer" Style="Keyword" />
-				<Item Keyword="lua_tostring" Style="Keyword" />
-				<Item Keyword="lua_tothread" Style="Keyword" />
-				<Item Keyword="lua_touserdata" Style="Keyword" />
-				<Item Keyword="lua_type" Style="Keyword" />
-				<Item Keyword="lua_typename" Style="Keyword" />
-				<Item Keyword="lua_Writer" Style="Keyword" />
-				<Item Keyword="lua_xmove" Style="Keyword" />
-				<Item Keyword="lua_yield" Style="Keyword" />
-				<Item Keyword="math.abs" Style="Keyword" />
-				<Item Keyword="math.acos" Style="Keyword" />
-				<Item Keyword="math.asin" Style="Keyword" />
-				<Item Keyword="math.atan" Style="Keyword" />
-				<Item Keyword="math.atan2" Style="Keyword" />
-				<Item Keyword="math.ceil" Style="Keyword" />
-				<Item Keyword="math.cos" Style="Keyword" />
-				<Item Keyword="math.cosh" Style="Keyword" />
-				<Item Keyword="math.deg" Style="Keyword" />
-				<Item Keyword="math.exp" Style="Keyword" />
-				<Item Keyword="math.floor" Style="Keyword" />
-				<Item Keyword="math.fmod" Style="Keyword" />
-				<Item Keyword="math.frexp" Style="Keyword" />
-				<Item Keyword="math.huge" Style="Keyword" />
-				<Item Keyword="math.ldexp" Style="Keyword" />
-				<Item Keyword="math.log" Style="Keyword" />
-				<Item Keyword="math.log10" Style="Keyword" />
-				<Item Keyword="math.max" Style="Keyword" />
-				<Item Keyword="math.min" Style="Keyword" />
-				<Item Keyword="math.modf" Style="Keyword" />
-				<Item Keyword="math.pi" Style="Keyword" />
-				<Item Keyword="math.pow" Style="Keyword" />
-				<Item Keyword="math.rad" Style="Keyword" />
-				<Item Keyword="math.random" Style="Keyword" />
-				<Item Keyword="math.randomseed" Style="Keyword" />
-				<Item Keyword="math.sin" Style="Keyword" />
-				<Item Keyword="math.sinh" Style="Keyword" />
-				<Item Keyword="math.sqrt" Style="Keyword" />
-				<Item Keyword="math.tan" Style="Keyword" />
-				<Item Keyword="math.tanh" Style="Keyword" />
-				<Item Keyword="module" Style="Keyword" />
-				<Item Keyword="next" Style="Keyword" />
-				<Item Keyword="nil" Style="Control" />
-				<Item Keyword="not" Style="Control" />
-				<Item Keyword="or" Style="Control" />
-				<Item Keyword="os.clock" Style="Keyword" />
-				<Item Keyword="os.date" Style="Keyword" />
-				<Item Keyword="os.difftime" Style="Keyword" />
-				<Item Keyword="os.execute" Style="Keyword" />
-				<Item Keyword="os.exit" Style="Keyword" />
-				<Item Keyword="os.getenv" Style="Keyword" />
-				<Item Keyword="os.remove" Style="Keyword" />
-				<Item Keyword="os.rename" Style="Keyword" />
-				<Item Keyword="os.setlocale" Style="Keyword" />
-				<Item Keyword="os.time" Style="Keyword" />
-				<Item Keyword="os.tmpname" Style="Keyword" />
-				<Item Keyword="package.cpath" Style="Keyword" />
-				<Item Keyword="package.loaded" Style="Keyword" />
-				<Item Keyword="package.loaders" Style="Keyword" />
-				<Item Keyword="package.loadlib" Style="Keyword" />
-				<Item Keyword="package.path" Style="Keyword" />
-				<Item Keyword="package.preload" Style="Keyword" />
-				<Item Keyword="package.seeall" Style="Keyword" />
-				<Item Keyword="pairs" Style="Keyword" />
-				<Item Keyword="pcall" Style="Keyword" />
-				<Item Keyword="print" Style="Keyword" />
-				<Item Keyword="rawequal" Style="Keyword" />
-				<Item Keyword="rawget" Style="Keyword" />
-				<Item Keyword="rawset" Style="Keyword" />
-				<Item Keyword="repeat" Style="Control" />
-				<Item Keyword="require" Style="Keyword" />
-				<Item Keyword="return" Style="Control" />
-				<Item Keyword="select" Style="Keyword" />
-				<Item Keyword="setfenv" Style="Keyword" />
-				<Item Keyword="setmetatable" Style="Keyword" />
-				<Item Keyword="string.byte" Style="Keyword" />
-				<Item Keyword="string.char" Style="Keyword" />
-				<Item Keyword="string.dump" Style="Keyword" />
-				<Item Keyword="string.find" Style="Keyword" />
-				<Item Keyword="string.format" Style="Keyword" />
-				<Item Keyword="string.gmatch" Style="Keyword" />
-				<Item Keyword="string.gsub" Style="Keyword" />
-				<Item Keyword="string.len" Style="Keyword" />
-				<Item Keyword="string.lower" Style="Keyword" />
-				<Item Keyword="string.match" Style="Keyword" />
-				<Item Keyword="string.rep" Style="Keyword" />
-				<Item Keyword="string.reverse" Style="Keyword" />
-				<Item Keyword="string.sub" Style="Keyword" />
-				<Item Keyword="string.upper" Style="Keyword" />
-				<Item Keyword="table.concat" Style="Keyword" />
-				<Item Keyword="table.insert" Style="Keyword" />
-				<Item Keyword="table.maxn" Style="Keyword" />
-				<Item Keyword="table.remove" Style="Keyword" />
-				<Item Keyword="table.sort" Style="Keyword" />
-				<Item Keyword="then" Style="Control" />
-				<Item Keyword="tonumber" Style="Keyword" />
-				<Item Keyword="tostring" Style="Keyword" />
-				<Item Keyword="true" Style="Control" />
-				<Item Keyword="type" Style="Keyword" />
-				<Item Keyword="unpack" Style="Keyword" />
-				<Item Keyword="until" Style="Control" />
-				<Item Keyword="_VERSION" Style="Keyword" />
-				<Item Keyword="while" Style="Control" />
-				<Item Keyword="xpcall" Style="Keyword" />
-				<Item Keyword="{" Style="Operator" />
-				<Item Keyword="]" Style="Operator" />
-				<Item Keyword="}" Style="Operator" />
-				<Item Keyword="^" Style="Operator" />
-				<Item Keyword="~=" Style="Operator" />
-			</Keywords>
-		</Language>
 	</Languages>
 	<ParsingOptions>
 		<ParsingPreferences
 			ParseCOMMacros="1"
 			IgnoreNamespaces="0"
 			IgnoreJavaPackages="1"
-			SupportMicrochipC="0"
 			DefaultHTMLScriptLanguage="JavaScript"
 			/>
 	</ParsingOptions>
@@ -8297,10 +7528,10 @@
 		<SearchDialogs>
 			<Search
 				RegexType="Source Insight"
-				IgnoreCase="0"
+				IgnoreCase="1"
 				UseRegexp="0"
-				WrapAround="0"
-				SelectMatch="0"
+				WrapAround="1"
+				SelectMatch="1"
 				FindNonMatch="0"
 				FindOnePerLine="0"
 				FindBackward="0"
@@ -8322,14 +7553,14 @@
 				ResultNormalizeFileNames="1"
 				/>
 			<LookupReferences
-				SearchMethod="Simple String"
+				SearchMethod="Look Up Reference"
 				RegexType="Source Insight"
 				IgnoreCase="0"
-				FindWholeWords="0"
+				FindWholeWords="1"
 				SkipComments="0"
 				OnlyComments="0"
 				SkipDeadCode="0"
-				FindExactReference="0"
+				FindExactReference="1"
 				TouchFiles="0"
 				LinesOfContext="1"
 				ResultFileName="1"
@@ -8342,14 +7573,14 @@
 			<SearchProject
 				SearchMethod="Keyword Expression"
 				RegexType="Source Insight"
-				IgnoreCase="1"
+				IgnoreCase="0"
 				FindWholeWords="1"
 				SkipComments="0"
 				OnlyComments="0"
 				SkipDeadCode="0"
 				FindExactReference="0"
-				FindWordVariations="0"
-				FindFragments="0"
+				FindWordVariations="1"
+				FindFragments="1"
 				TouchFiles="0"
 				LinesOfContext="5"
 				ResultFileName="1"
@@ -8368,7 +7599,7 @@
 				FindExactReference="1"
 				ReplaceInReadOnlyFiles="0"
 				/>
-			<SearchBar AutoLoadSel="1" SearchWhileTyping="1" ContextSensitive="0" />
+			<SearchBar AutoLoadSel="0" SearchWhileTyping="1" ContextSensitive="1" />
 			<ProjectSearchBar AutoLoadSel="0" UseScopeOperator="1" />
 		</SearchDialogs>
 	</Search>
@@ -8398,91 +7629,91 @@
 			<Toolbars>
 				<Toolbar
 					Name="Browse"
-					Width="64"
+					Width="76"
 					Ordinal="0"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="File"
-					Width="168"
+					Width="196"
 					Ordinal="1"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Edit"
-					Width="144"
+					Width="168"
 					Ordinal="2"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Search"
-					Width="160"
+					Width="188"
 					Ordinal="3"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Navigation"
-					Width="112"
+					Width="132"
 					Ordinal="4"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Symbols"
-					Width="136"
+					Width="160"
 					Ordinal="5"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Window"
-					Width="112"
+					Width="132"
 					Ordinal="6"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Help"
-					Width="64"
+					Width="76"
 					Ordinal="7"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="View"
-					Width="280"
+					Width="328"
 					Ordinal="8"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Source Control"
-					Width="146"
+					Width="175"
 					Ordinal="9"
 					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Build"
-					Width="112"
+					Width="132"
 					Ordinal="10"
-					IsVisible="1"
+					IsVisible="0"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Outline"
-					Width="112"
+					Width="132"
 					Ordinal="11"
 					IsVisible="1"
 					NewRow="0"
 					/>
 				<Toolbar
 					Name="Layout"
-					Width="160"
+					Width="188"
 					Ordinal="12"
 					IsVisible="1"
 					NewRow="0"
@@ -8516,62 +7747,16 @@
 		ListParams="0"
 		SortBySymbolName="1"
 		>
-		<SymbolTypes>
-			<Type Name="Function" />
-			<Type Name="Macro" />
-			<Type Name="Structure" />
-			<Type Name="Union" />
-			<Type Name="Type Definition" />
-			<Type Name="Variable" />
-			<Type Name="Constant" />
-			<Type Name="Enumeration" />
-			<Type Name="Custom Tag" />
-			<Type Name="Editor Macro" />
-			<Type Name="Class" />
-			<Type Name="Member Function" />
-			<Type Name="Enum Constant" />
-			<Type Name="Function Prototype" />
-			<Type Name="#-Directive" />
-			<Type Name="Label" />
-			<Type Name="Data Member" />
-			<Type Name="Interface" />
-			<Type Name="Resource" />
-			<Type Name="Function Template" />
-			<Type Name="Class Template" />
-			<Type Name="Package" />
-			<Type Name="Namespace" />
-			<Type Name="Token Macro" />
-			<Type Name="Code Block" />
-			<Type Name="Parsing Error" />
-			<Type Name="HTML or XML Element" />
-			<Type Name="HTML Title" />
-			<Type Name="Member Function Prototype" />
-			<Type Name="IDL Module" />
-			<Type Name="IDL Library" />
-			<Type Name="IDL Interface" />
-			<Type Name="CSS Rule Selector" />
-			<Type Name="C# Class Property" />
-			<Type Name="C# Indexer" />
-			<Type Name="C# Event" />
-			<Type Name="VHDL Entity" />
-			<Type Name="VHDL Architecture" />
-			<Type Name="VHDL Component" />
-			<Type Name="VHDL Process" />
-			<Type Name="VHDL Configuration" />
-			<Type Name="External Variable" />
-			<Type Name="Alias" />
-			<Type Name="Macro Event" />
-			<Type Name="Editor Macro Function" />
-		</SymbolTypes>
+		<SymbolTypes All="1" />
 	</ProjectReport>
 	<SymbolPane
-		Width="459"
+		Width="276"
 		TextColor="#d4d4d4"
 		BackColor="#1e1e1e"
 		ShowChanges="1"
 		ShowLongFunctions="1"
 		>
-		<Font name="DejaVu Sans Mono" psize="9" fpfamily="49" charset="0" />
+		<Font name="Microsoft YaHei UI" psize="9" fpfamily="34" charset="0" />
 		<SymbolTypes All="1" />
 		<SymbolSorting
 			SortMode="1"
@@ -8598,7 +7783,7 @@
 	</ParseConditions>
 	<SourceFormatter>
 		<SourceFormatPresets
-			CurrentName="K&amp;R"
+			CurrentName="Standard"
 			>
 			<PresetList>
 				<Preset
@@ -8838,7 +8023,7 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</BookmarkWindow>
 	<SnippetWindow>
@@ -8857,7 +8042,7 @@
 				TextColor="#000000"
 				BackColor="#c5c5c5"
 				>
-				<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListDisplay>
 		</SnippetWindowOptions>
 	</SnippetWindow>
@@ -8873,24 +8058,23 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ClipWindow>
 	<ContextWindow
 		IsVisible="1"
 		IsLocked="0"
 		IsMonoFontView="0"
-		ViewLineNumbers="1"
+		ViewLineNumbers="0"
 		ShowOverview="0"
-		PercentScale="110"
-		ShowBaseStructure="1"
+		PercentScale="100"
 		BackColor="#1e1e1e"
 		>
 		<ListDisplay
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 		<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
 	</ContextWindow>
@@ -8908,28 +8092,28 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</DirectoryCompareWindow>
 	<FileCompareWindow
-		IsVisible="1"
+		IsVisible="0"
 		IsLocked="0"
 		ViewLineNumbers="1"
 		ShowOverview="1"
-		ShowScrollBar="0"
+		ShowScrollBar="1"
 		ShowNestingLines="1"
 		PercentScale="100"
 		BackColor="#1e1e1e"
 		ShowSymbolPane="1"
-		SymbolPaneWidth="238"
+		SymbolPaneWidth="180"
 		DiffCmdLine="&quot;%PROGRAM_DIR%\sidiff.exe&quot; -C -b -n"
-		AllowEdits="1"
+		AllowEdits="0"
 		>
 		<ListDisplay
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FileCompareWindow>
 	<ProjectFileWindow
@@ -8937,7 +8121,7 @@
 		ShowFileDate="1"
 		ShowFileSize="1"
 		ShowDirName="1"
-		ShowMetrics="0"
+		ShowMetrics="1"
 		CodeMetricsType="1"
 		SortColumn="0"
 		>
@@ -8945,13 +8129,7 @@
 			TextColor="#d4d4d4"
 			BackColor="#1e1e1e"
 			>
-			<Font
-				name="DejaVu Sans Mono"
-				italic="1"
-				psize="12"
-				fpfamily="49"
-				charset="0"
-				/>
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="34" charset="0" />
 		</ListDisplay>
 	</ProjectFileWindow>
 	<ProjectFileTypeWindow
@@ -8966,12 +8144,12 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFileTypeWindow>
 	<ProjectFolderWindow
-		ShowFileDate="1"
-		ShowFileSize="1"
+		ShowFileDate="0"
+		ShowFileSize="0"
 		AutoLayout="1"
 		SelectCurFile="1"
 		SplitPercent="50"
@@ -8980,70 +8158,10 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectFolderWindow>
 	<ProjectSymbolWindow
-		ShowMetrics="1"
-		ShowFile="1"
-		Metric="Lines of Code"
-		>
-		<SymbolTypes>
-			<Type Name="Function" />
-			<Type Name="Macro" />
-			<Type Name="Structure" />
-			<Type Name="Union" />
-			<Type Name="Type Definition" />
-			<Type Name="Variable" />
-			<Type Name="Constant" />
-			<Type Name="Enumeration" />
-			<Type Name="Custom Tag" />
-			<Type Name="Editor Macro" />
-			<Type Name="Class" />
-			<Type Name="Member Function" />
-			<Type Name="Enum Constant" />
-			<Type Name="Function Prototype" />
-			<Type Name="#-Directive" />
-			<Type Name="Label" />
-			<Type Name="Data Member" />
-			<Type Name="Interface" />
-			<Type Name="Resource" />
-			<Type Name="Function Template" />
-			<Type Name="Class Template" />
-			<Type Name="Package" />
-			<Type Name="Namespace" />
-			<Type Name="Token Macro" />
-			<Type Name="Code Block" />
-			<Type Name="Parsing Error" />
-			<Type Name="HTML or XML Element" />
-			<Type Name="HTML Title" />
-			<Type Name="Member Function Prototype" />
-			<Type Name="IDL Module" />
-			<Type Name="IDL Library" />
-			<Type Name="IDL Interface" />
-			<Type Name="CSS Rule Selector" />
-			<Type Name="C# Class Property" />
-			<Type Name="C# Indexer" />
-			<Type Name="C# Event" />
-			<Type Name="VHDL Entity" />
-			<Type Name="VHDL Architecture" />
-			<Type Name="VHDL Component" />
-			<Type Name="VHDL Process" />
-			<Type Name="VHDL Configuration" />
-			<Type Name="External Variable" />
-			<Type Name="Alias" />
-			<Type Name="Macro Event" />
-			<Type Name="Editor Macro Function" />
-		</SymbolTypes>
-		<Sort SortType="6" Invert="0" />
-		<ListDisplay
-			TextColor="#000000"
-			BackColor="#c5c5c5"
-			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
-		</ListDisplay>
-	</ProjectSymbolWindow>
-	<ProjectSymbolTypeWindow
 		ShowMetrics="1"
 		ShowFile="1"
 		Metric="Lines of Code"
@@ -9112,7 +8230,79 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
+		</ListDisplay>
+	</ProjectSymbolWindow>
+	<ProjectSymbolTypeWindow
+		ShowMetrics="0"
+		ShowFile="1"
+		Metric="Lines of Code"
+		>
+		<SymbolTypes>
+			<Type Name="Function" />
+			<Type Name="Macro" />
+			<Type Name="Structure" />
+			<Type Name="Union" />
+			<Type Name="Type Definition" />
+			<Type Name="Variable" />
+			<Type Name="Constant" />
+			<Type Name="Enumeration" />
+			<Type Name="Custom Tag" />
+			<Type Name="Editor Macro" />
+			<Type Name="Class" />
+			<Type Name="Member Function" />
+			<Type Name="Enum Constant" />
+			<Type Name="Function Prototype" />
+			<Type Name="#-Directive" />
+			<Type Name="Search Result" />
+			<Type Name="Label" />
+			<Type Name="Data Member" />
+			<Type Name="Interface" />
+			<Type Name="Resource" />
+			<Type Name="File" />
+			<Type Name="Directory" />
+			<Type Name="Function Template" />
+			<Type Name="Class Template" />
+			<Type Name="Package" />
+			<Type Name="Namespace" />
+			<Type Name="Token Macro" />
+			<Type Name="Code Block" />
+			<Type Name="Parameter" />
+			<Type Name="Parsing Error" />
+			<Type Name="HTML or XML Element" />
+			<Type Name="HTML Title" />
+			<Type Name="Member Function Prototype" />
+			<Type Name="IDL Module" />
+			<Type Name="IDL Library" />
+			<Type Name="IDL Interface" />
+			<Type Name="C++ Template" />
+			<Type Name="Template Parameter" />
+			<Type Name="CSS Rule Selector" />
+			<Type Name="C# Class Property" />
+			<Type Name="C# Indexer" />
+			<Type Name="C# Event" />
+			<Type Name="VHDL Entity" />
+			<Type Name="VHDL Architecture" />
+			<Type Name="VHDL Component" />
+			<Type Name="VHDL Process" />
+			<Type Name="VHDL Configuration" />
+			<Type Name="Type Reference" />
+			<Type Name="External Variable" />
+			<Type Name="Alias" />
+			<Type Name="Alias Target" />
+			<Type Name="Type Parameter" />
+			<Type Name="Macro Event" />
+			<Type Name="Captured Variable" />
+			<Type Name="Clip" />
+			<Type Name="Snippet" />
+			<Type Name="Editor Macro Function" />
+		</SymbolTypes>
+		<Sort SortType="6" Invert="0" />
+		<ListDisplay
+			TextColor="#000000"
+			BackColor="#c5c5c5"
+			>
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</ProjectSymbolTypeWindow>
 	<WindowListWindow
@@ -9124,7 +8314,7 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</WindowListWindow>
 	<RelationWindow>
@@ -9135,7 +8325,7 @@
 				TextColor="#d4d4d4"
 				BackColor="#1e1e1e"
 				>
-				<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+				<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 			</ListOptions>
 			<GraphOptions
 				LayoutStyle="1"
@@ -9156,7 +8346,7 @@
 					UseDropShadow="1"
 					UseShading="1"
 					>
-					<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+					<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 				</NodeFormat>
 			</GraphOptions>
 		</RelationWindowOptions>
@@ -9165,67 +8355,21 @@
 				ViewMode="Outline"
 				IsLocked="0"
 				ExcludeMacros="0"
-				ShowMetrics="1"
+				ShowMetrics="0"
 				ShowGraphDetails="1"
 				GroupMultipleRefs="1"
-				ShowLineNumbers="1"
+				ShowLineNumbers="0"
 				ShowFileName="1"
 				AutoExpandLevels="1"
 				CodeMetricsType="1"
 				SortType="2"
 				>
 				<TrackingOptions tracktype="1" InComments="0" InStrings="0" InAnyFile="0" />
-				<SymbolTypes>
-					<Type Name="Function" />
-					<Type Name="Macro" />
-					<Type Name="Structure" />
-					<Type Name="Union" />
-					<Type Name="Type Definition" />
-					<Type Name="Variable" />
-					<Type Name="Constant" />
-					<Type Name="Enumeration" />
-					<Type Name="Custom Tag" />
-					<Type Name="Editor Macro" />
-					<Type Name="Class" />
-					<Type Name="Member Function" />
-					<Type Name="Enum Constant" />
-					<Type Name="Function Prototype" />
-					<Type Name="#-Directive" />
-					<Type Name="Label" />
-					<Type Name="Data Member" />
-					<Type Name="Interface" />
-					<Type Name="Resource" />
-					<Type Name="Function Template" />
-					<Type Name="Class Template" />
-					<Type Name="Package" />
-					<Type Name="Namespace" />
-					<Type Name="Token Macro" />
-					<Type Name="Code Block" />
-					<Type Name="Parsing Error" />
-					<Type Name="HTML or XML Element" />
-					<Type Name="HTML Title" />
-					<Type Name="Member Function Prototype" />
-					<Type Name="IDL Module" />
-					<Type Name="IDL Library" />
-					<Type Name="IDL Interface" />
-					<Type Name="CSS Rule Selector" />
-					<Type Name="C# Class Property" />
-					<Type Name="C# Indexer" />
-					<Type Name="C# Event" />
-					<Type Name="VHDL Entity" />
-					<Type Name="VHDL Architecture" />
-					<Type Name="VHDL Component" />
-					<Type Name="VHDL Process" />
-					<Type Name="VHDL Configuration" />
-					<Type Name="External Variable" />
-					<Type Name="Alias" />
-					<Type Name="Macro Event" />
-					<Type Name="Editor Macro Function" />
-				</SymbolTypes>
+				<SymbolTypes All="1" />
 				<CodeMetricsFilter CodeMetricsType="1" MinValue="0" MaxValue="0" />
 				<ViewRelationRules
 					ForTypes="Contents"
-					ForFunctions="Container"
+					ForFunctions="References"
 					ForVariables="References"
 					ForClasses="Inheritance"
 					ForFiles="None"
@@ -9264,7 +8408,7 @@
 			TextColor="#000000"
 			BackColor="#c5c5c5"
 			>
-			<Font name="微软雅黑" psize="9" fpfamily="0" charset="1" />
+			<Font name="Microsoft YaHei UI" psize="9" fpfamily="0" charset="1" />
 		</ListDisplay>
 	</FTPWindow>
 </SourceInsightConfiguration>
