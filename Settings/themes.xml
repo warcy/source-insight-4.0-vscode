@@ -7661,7 +7661,7 @@
 			Name="JoyDark"
 			>
 			<DisplayColors>
-				<Item Name="DefaultText" Color="#919191" />
+				<Item Name="DefaultText" Color="#d1d1d1" />
 				<Item Name="WindowBackground" Color="#1e1e1e" />
 				<Item Name="SelectionBar" Color="#1e1e1e" />
 				<Item Name="PrintedDefaultText" Color="#ffc78e" />
@@ -7830,8 +7830,8 @@
 				<Style Name="Declaration" Bold="1" TextColor="#36b49a" />
 				<Style
 					Name="Ref To Local"
-					ParentStyle="Reference"
 					TextColor="#fbd784"
+					ParentStyle="Reference"
 					/>
 				<Style Name="Reference" TextColor="#fdeeca" />
 				<Style Name="Directive" TextColor="#ff0080" ParentStyle="Control" />
@@ -7862,9 +7862,9 @@
 					/>
 				<Style
 					Name="Ref to Parameter"
-					ParentStyle="Ref To Local"
 					Bold="1"
 					TextColor="#b0a911"
+					ParentStyle="Ref To Local"
 					/>
 				<Style Name="Declare Template" ParentStyle="Declare Function" />
 				<Style Name="Declare Package" ParentStyle="Declaration" />
@@ -7885,18 +7885,20 @@
 				<Style Name="Declare Method Inline" ParentStyle="Declare Function" />
 				<Style
 					Name="Declare Function"
-					ParentStyle="Declaration"
-					FontName="Consolas"
-					FontPitchFamily="49"
-					FontCharset="0"
 					Scale="140"
 					Bold="1"
 					KeepWithNextLine="1"
+					ShadowColor="#565656"
+					FontName="Consolas"
+					FontPitchFamily="49"
+					FontCharset="0"
+					ParentStyle="Declaration"
 					/>
 				<Style Name="Declare Macro" ParentStyle="Declaration" />
 				<Style
 					Name="Declare Struct"
 					KeepWithNextLine="1"
+					ShadowColor="#565656"
 					ParentStyle="Declaration"
 					/>
 				<Style Name="Declare Union" ParentStyle="Declare Struct" />
@@ -7905,7 +7907,7 @@
 				<Style Name="Declare Var" ParentStyle="Declaration" />
 				<Style Name="Declare Constant" ParentStyle="Declaration" />
 				<Style Name="Declare Enum" ParentStyle="Declare Struct" />
-				<Style Name="Declare Enum Const" ParentStyle="Declaration" />
+				<Style Name="Declare Enum Const" Bold="0" ParentStyle="Declaration" />
 				<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
 				<Style Name="Declare Prototype" ParentStyle="Declare Function" />
 				<Style Name="Preprocessor" ParentStyle="Declaration" />
@@ -7928,20 +7930,20 @@
 				<Style Name="Declare Custom Tag" ParentStyle="Declaration" />
 				<Style
 					Name="Ref to Func"
-					ParentStyle="Reference"
 					Bold="1"
 					TextColor="#f47c59"
+					ParentStyle="Reference"
 					/>
-				<Style Name="Ref to Macro" ParentStyle="Ref to Func" Italic="1" />
+				<Style Name="Ref to Macro" Italic="1" ParentStyle="Ref to Func" />
 				<Style Name="Ref to Struct" ParentStyle="Reference" />
 				<Style Name="Ref to Union" ParentStyle="Ref to Struct" />
 				<Style Name="Ref to Typedef" ParentStyle="Ref to Struct" />
 				<Style
 					Name="Ref to Global Var"
-					ParentStyle="Reference"
 					Bold="1"
 					Italic="1"
 					TextColor="#ba75ff"
+					ParentStyle="Reference"
 					/>
 				<Style
 					Name="Ref to Const"
@@ -7958,7 +7960,7 @@
 				<Style Name="Ref to Preproc" ParentStyle="Reference" />
 				<Style Name="Ref to Search" ParentStyle="Reference" />
 				<Style Name="Ref to Label" ParentStyle="Reference" />
-				<Style Name="Ref to Member" ParentStyle="Reference" Italic="1" />
+				<Style Name="Ref to Member" Italic="1" ParentStyle="Reference" />
 				<Style Name="Ref to Interface" ParentStyle="Ref to Class" />
 				<Style Name="Ref to Resource" ParentStyle="Reference" />
 				<Style Name="Ref to File" ParentStyle="Reference" />
@@ -8005,8 +8007,8 @@
 				<Style Name="Inactive Code" TextColor="#808080" />
 				<Style
 					Name="Declare Parameter"
-					ParentStyle="Declaration"
 					Underline="Single"
+					ParentStyle="Declaration"
 					/>
 				<Style
 					Name="Auto Annotations"
@@ -8060,8 +8062,8 @@
 				<Style Name="Comment Multi Line" ParentStyle="Comment" />
 				<Style
 					Name="Parentheses"
-					ParentStyle="Delimiter"
 					TextColor="#fdeeca"
+					ParentStyle="Delimiter"
 					/>
 				<Style Name="HTML Body Text" FixedWhiteSpace="0" />
 				<Style Name="HTML Tag" TextColor="#008000" Bold="1" />
@@ -8146,7 +8148,7 @@
 				<Style Name="Ref to VHDL Component" ParentStyle="Reference" />
 				<Style Name="Ref to VHDL Process" ParentStyle="Reference" />
 				<Style Name="Ref to VHDL Config" ParentStyle="Reference" />
-				<Style Name="Include" ParentStyle="Keyword" />
+				<Style Name="Include" />
 			</Styles>
 		</Theme>
 	</ThemeList>

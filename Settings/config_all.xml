@@ -167,7 +167,7 @@
 		ScaleNestedParens="1"
 		/>
 	<DisplayColors>
-		<Item Name="DefaultText" Color="#919191" />
+		<Item Name="DefaultText" Color="#d1d1d1" />
 		<Item Name="WindowBackground" Color="#1e1e1e" />
 		<Item Name="SelectionBar" Color="#1e1e1e" />
 		<Item Name="PrintedDefaultText" Color="#ffc78e" />
@@ -2105,6 +2105,7 @@
 			Scale="140"
 			Bold="1"
 			KeepWithNextLine="1"
+			ShadowColor="#565656"
 			FontName="Consolas"
 			FontPitchFamily="49"
 			FontCharset="0"
@@ -2114,6 +2115,7 @@
 		<Style
 			Name="Declare Struct"
 			KeepWithNextLine="1"
+			ShadowColor="#565656"
 			ParentStyle="Declaration"
 			/>
 		<Style Name="Declare Union" ParentStyle="Declare Struct" />
@@ -2122,7 +2124,7 @@
 		<Style Name="Declare Var" ParentStyle="Declaration" />
 		<Style Name="Declare Constant" ParentStyle="Declaration" />
 		<Style Name="Declare Enum" ParentStyle="Declare Struct" />
-		<Style Name="Declare Enum Const" ParentStyle="Declaration" />
+		<Style Name="Declare Enum Const" Bold="0" ParentStyle="Declaration" />
 		<Style Name="Declare Edit Macro" ParentStyle="Declare Function" />
 		<Style Name="Declare Prototype" ParentStyle="Declare Function" />
 		<Style Name="Preprocessor" ParentStyle="Declaration" />

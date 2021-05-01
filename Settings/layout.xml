@@ -6,33 +6,33 @@
 	<!-- This is a Source Insight desktop layout file. -->
 	<!-- www.sourceinsight.com -->
 	<MainWindow
-		IsMaximized="0"
+		IsMaximized="1"
 		IsFullScreen="0"
 		>
-		<WindowRect Left="-7" Top="30" Right="967" Bottom="1087" />
+		<WindowRect Left="-8" Top="22" Right="1928" Bottom="1088" />
 		<NormalWindowRect Left="-7" Top="30" Right="967" Bottom="1087" />
 	</MainWindow>
 	<Options>
 		<WindowTabOptions IsVisible="1" ShowPathInfo="1" SortOrder="Usage" />
 	</Options>
 	<PanelArea>
-		<WorkArea Left="1" Top="130" Right="959" Bottom="1053" />
+		<WorkArea Left="0" Top="122" Right="1920" Bottom="1054" />
 		<TabTray IsVisible="0" />
 		<DockZones>
 			<Left>
-				<Rect Left="1" Top="134" Right="5" Bottom="865" />
+				<Rect Left="0" Top="126" Right="4" Bottom="1050" />
 				<Contents/>
 			</Left>
 			<Top>
-				<Rect Left="1" Top="130" Right="959" Bottom="134" />
+				<Rect Left="0" Top="122" Right="1920" Bottom="126" />
 				<Contents/>
 			</Top>
 			<Right>
-				<Rect Left="955" Top="134" Right="959" Bottom="865" />
+				<Rect Left="1916" Top="126" Right="1920" Bottom="1050" />
 				<Contents/>
 			</Right>
 			<Bottom>
-				<Rect Left="1" Top="865" Right="959" Bottom="1053" />
+				<Rect Left="0" Top="1050" Right="1920" Bottom="1054" />
 				<Contents>
 					<PanelHost
 						Title="Context"
@@ -43,7 +43,7 @@
 						PanelCount="1"
 						idPalActive="ContextPanel"
 						>
-						<WindowRect Left="1" Top="869" Right="959" Bottom="7355" />
+						<WindowRect Left="0" Top="1054" Right="1920" Bottom="7611" />
 						<PredockRect Left="785" Top="390" Right="1135" Bottom="690" />
 						<Panels>
 							<Panel id="ContextPanel" IsHidden="0" ViewToolbar="1" />
@@ -52,13 +52,13 @@
 					<PanelHost
 						Title="Project Files"
 						id="ProjectPanelHost"
-						IsHidden="0"
+						IsHidden="1"
 						PctTrans="0"
 						IsMinimized="0"
 						PanelCount="4"
 						idPalActive="ProjectFilePanel"
 						>
-						<WindowRect Left="1" Top="869" Right="959" Bottom="1053" />
+						<WindowRect Left="0" Top="1054" Right="1920" Bottom="1240" />
 						<PredockRect Left="100" Top="100" Right="650" Bottom="600" />
 						<Panels>
 							<Panel
